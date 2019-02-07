@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
- if(!sw.has_elapsed(timeForward))
+ if(sw.has_elapsed(timeForward))
  {
   if(left)
   {
