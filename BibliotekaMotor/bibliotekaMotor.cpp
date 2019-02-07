@@ -62,6 +62,16 @@ void Motor::startDrivingRightMotorForward(short speed)
 	_startDrivingForwardRightMotor(speed);
 }
 
+void Motor::startDrivingLeftMotorBackward(short speed)
+{
+	_startDrivingBackwardLeftMotor(speed);
+}
+
+void Motor::startDrivingRightMotorBackward(short speed)
+{
+	_startDrivingBackwardRightMotor(speed);
+}
+
 void Motor::_stopLeftMotor()
 {
   digitalWrite(motorLeft[0],LOW);
