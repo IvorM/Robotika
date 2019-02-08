@@ -1,11 +1,13 @@
 #include "ic.hpp"
 #include "Arduino.h"
 
-ICSenzor::ICSenzor(byte pinNum)
-	{
-		pin=pinNum;
-		pinMode(pin, INPUT);
-	}
+Ic::Ic(byte pinNum){
+
+    pin = pinNum;
+
+    pinMode(pin, INPUT);
+
+}
 
  bool Ic::isObstacle(){
 
@@ -18,5 +20,11 @@ ICSenzor::ICSenzor(byte pinNum)
      {
          return true;
      }
+
+ }
+
+ int Ic::sensorValue(){
+
+     return analogRead(pin);
 
  }

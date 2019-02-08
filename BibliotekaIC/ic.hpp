@@ -12,6 +12,7 @@ class Ic {
   public:
     Ic(byte pinNum);
     bool isObstacle();
+    int sensorValue();
       
 };
 
